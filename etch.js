@@ -12,6 +12,14 @@ function createBoxes(numPerRow) {
       div.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
     }
 
+    div.addEventListener("mouseover", function () {
+        div.style.backgroundColor = "black"; // Temporary hover color
+      });
+      
+      div.addEventListener("mouseout", function () {
+        div.style.backgroundColor = "black"; // Keeps the color after hover
+      });
+
     container.appendChild(div);
   }
 }
