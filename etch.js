@@ -9,7 +9,7 @@ function createBoxes(numPerRow) {
     if (i % mod === 0) {
       div.style.cssText = "border: 0; height: 0; width: 100%";
     } else {
-      div.style.cssText = "border: 1px solid black; height: 25px; width: 25px";
+      div.style.cssText = "border: 0.5px solid black; height: 25px; width: 25px";
     }
 
     div.addEventListener("mouseover", function () {
