@@ -16,7 +16,10 @@ function createBoxes(numPerRow) {
 
 function colorGrid() {}
 
-function clearGrid() {}
+function resetGrid() {
+    input = prompt("Enter number of grid cells in a row")
+    createBoxes();
+}
 
 const body = document.querySelector("body");
 const container = document.querySelector(".container");
@@ -25,6 +28,6 @@ grid.classList.add("gridContainer");
 
 container.appendChild(grid);
 
-let input = prompt("Enter number of boxes in one line");
+let input = prompt("Enter number of grid cells in a row");
 
 createBoxes(input);
