@@ -59,7 +59,7 @@ container.appendChild(grid);
 const p1 = document.createElement("p");
 p1.textContent = "Etch";
 const p2 = document.createElement("p");
-p1.textContent = "-a-";
+p2.textContent = "-a-";
 const p3 = document.createElement("p");
 p3.textContent = "Sketch";
 
