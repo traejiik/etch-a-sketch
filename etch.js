@@ -1,47 +1,56 @@
 function createBoxes(numPerRow) {
-  const total = numPerRow ** 2;
+    const total = numPerRow ** 2;
 
-  for (let i = 0; i < total; i++) {
-    let div = document.createElement("div");
-    div.classList.add("grid");
-    grid.append(div);
-  }
-  grid.style.gridTemplateColumns = `repeat(${numPerRow}, minmax(0px, 1fr))`;
-  grid.style.gridTemplateRows = `repeat(${numPerRow}, minmax(0px, 1fr))`;
-  const grids = document.querySelectorAll(".grid");
-  grids.forEach((gridd) => {
-      gridd.addEventListener("mouseover", () => (gridd.className = "hoverGrid"));
-  });
+    for (let i = 0; i < total; i++) {
+        let div = document.createElement("div");
+        div.classList.add("grid");
+        grid.append(div);
+    }
+    grid.style.gridTemplateColumns = `repeat(${numPerRow}, minmax(0px, 1fr))`;
+    grid.style.gridTemplateRows = `repeat(${numPerRow}, minmax(0px, 1fr))`;
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach((gridd) => {
+        gridd.addEventListener("mouseover", () => (gridd.className = "hoverGrid"));
+    });
 }
 
-function randomColourGrid() {
+function randomColour() {
     let color = [];
     for (let i = 0; i < 3; i++) {
-      color.push(Math.floor(Math.random() * 256));
+        color.push(Math.floor(Math.random() * 256));
     }
     return 'rgb(' + color.join(', ') + ')';
 }
 
-function resetGrid() {
-    input = prompt("Enter number of grid cells in a row");
-    document.querySelectorAll('.grid').forEach(e => e.remove())
-    document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
-    createBoxes(input);
+function colourGrid() {
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach((gridd) => {
+        gridd.addEventListener("mouseover", () => {
+          gridd.style.backgroundColor = randomColour();
+        });
+      });
 }
+
+function resetGrid() {
+            input = prompt("Enter number of grid cells in a row");
+            document.querySelectorAll('.grid').forEach(e => e.remove())
+            document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
+            createBoxes(input);
+        }
 
 function clearGrid() {
-    document.querySelectorAll('.grid').forEach(e => e.remove())
-    document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
-    createBoxes(input);
-}
+            document.querySelectorAll('.grid').forEach(e => e.remove())
+            document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
+            createBoxes(input);
+        }
 
 const body = document.querySelector("body");
-const container = document.querySelector(".container");
-const grid = document.createElement("div");
-grid.classList.add("gridContainer");
+    const container = document.querySelector(".container");
+    const grid = document.createElement("div");
+    grid.classList.add("gridContainer");
 
-container.appendChild(grid);
+    container.appendChild(grid);
 
-let input = prompt("Enter number of grid cells in a row");
+    let input = prompt("Enter number of grid cells in a row");
 
-createBoxes(input);
+    createBoxes(input);
