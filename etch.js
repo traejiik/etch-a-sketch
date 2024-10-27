@@ -2,12 +2,12 @@ function createBoxes(numPerRow) {
   const total = numPerRow ** 2;
 
   for (let i = 0; i < total; i++) {
-    const div = document.createElement("div");
+    let div = document.createElement("div");
     div.classList.add("grid");
-    grid.appendChild(div);
+    grid.append(div);
   }
-  div.style.gridTemplateColumns = `repeat(${input}, minmax(0px, 1fr))`;
-  div.style.gridTemplateRows = `repeat(${input}, minmax(0px, 1fr))`;
+  grid.style.gridTemplateColumns = `repeat(${numPerRow}, minmax(0px, 1fr))`;
+  grid.style.gridTemplateRows = `repeat(${numPerRow}, minmax(0px, 1fr))`;
   const grids = document.querySelectorAll(".grid");
   grids.forEach((gridd) => {
       gridd.addEventListener("mouseover", () => (gridd.className = "hoverGrid"));
