@@ -75,5 +75,5 @@ buttonss.appendChild(clear);
 
 buttns = document.querySelectorAll("button");
 buttns.forEach(btn => {
-    btn.style.cssText = "border-radius: 8px; height: 50px; width: 200px";
+    btn.style.cssText = "border: 0.2px solid black; border-radius: 8px; height: 50px; width: 200px";
 });
