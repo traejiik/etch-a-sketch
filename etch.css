@@ -50,4 +50,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bolder;
 }
