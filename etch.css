@@ -39,3 +39,15 @@ button:hover {
     background-color: aquamarine;
     color: black;
 }
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
