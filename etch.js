@@ -76,7 +76,7 @@ buttonss.id = "buttonContainer";
 
 body.appendChild(buttonss);
 
-buttonss.style.cssText = "display: flex; justify-content: space-around; margin: 20px";
+buttonss.style.cssText = "display: flex; justify-content: space-around; margin: 30px";
 
 const color = document.createElement("button");
 color.textContent = "Random Color Fill";
@@ -91,7 +91,7 @@ buttonss.appendChild(clear);
 
 buttns = document.querySelectorAll("button");
 buttns.forEach(btn => {
-    btn.style.cssText = "border: 0.2px solid black; border-radius: 8px; height: 50px; width: 200px";
+    btn.style.cssText = "border: 0.2px solid black; border-radius: 10px; height: 50px; width: 200px";
 });
 
 color.addEventListener("click", colourGrid);
