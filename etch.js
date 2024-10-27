@@ -54,3 +54,19 @@ container.appendChild(grid);
 let input = prompt("Enter number of grid cells in a row");
 
 createBoxes(input);
+
+const buttonss = document.createElement("div");
+buttonss.id = "buttonContainer";
+
+body.appendChild(buttonss);
+
+const color = document.createElement("button");
+color.textContent = "Random Color Fill";
+const reset = document.createElement("button");
+reset.textContent = "Reset Grid";
+const clear = document.createElement("button");
+clear.textContent = "Clear Grid";
+
+buttonss.appendChild(color);
+buttonss.appendChild(reset);
+buttonss.appendChild(clear);
