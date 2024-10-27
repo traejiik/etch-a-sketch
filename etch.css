@@ -9,10 +9,7 @@ body {
 }
 
 .gridContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
 }
 
 .grid {
