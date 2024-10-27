@@ -14,7 +14,13 @@ function createBoxes(numPerRow) {
   });
 }
 
-function colorGrid() {}
+function randomColourGrid() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+}
 
 function resetGrid() {
     input = prompt("Enter number of grid cells in a row");
