@@ -6,15 +6,17 @@ function createBoxes(numPerRow) {
     div.classList.add("grid");
     grid.appendChild(div);
   }
+  div.style.gridTemplateColumns = `repeat(${input}, minmax(0px, 1fr))`;
+  div.style.gridTemplateRows = `repeat(${input}, minmax(0px, 1fr))`;
+  const grids = document.querySelectorAll(".grid");
+  grids.forEach((gridd) => {
+      gridd.addEventListener("mouseover", () => (gridd.className = "hoverGrid"));
+  });
 }
 
-function colorGrid () {
+function colorGrid() {}
 
-}
-
-function clearGrid () {
-    
-}
+function clearGrid() {}
 
 const body = document.querySelector("body");
 const container = document.querySelector(".container");
