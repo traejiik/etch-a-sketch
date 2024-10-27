@@ -17,7 +17,9 @@ function createBoxes(numPerRow) {
 function colorGrid() {}
 
 function resetGrid() {
-    input = prompt("Enter number of grid cells in a row")
+    input = prompt("Enter number of grid cells in a row");
+    document.querySelectorAll('.grid').forEach(e => e.remove())
+    document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
     createBoxes();
 }
 
