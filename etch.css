@@ -46,7 +46,7 @@ button:hover {
     justify-content: center;
 }
 
-.head > .container {
+.head > .hcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
