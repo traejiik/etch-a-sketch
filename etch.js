@@ -72,3 +72,8 @@ clear.textContent = "Clear Grid";
 buttonss.appendChild(color);
 buttonss.appendChild(reset);
 buttonss.appendChild(clear);
+
+buttns = document.querySelectorAll("button");
+buttns.forEach(btn => {
+    btn.style.cssText = "border-radius: 8px; height: 50px; width: 200px";
+});
