@@ -56,16 +56,16 @@ hcont.classList.add("hcontainer");
 head.appendChild(hcont);
 container.appendChild(grid);
 
-const p1 = document.createElement("p");
-p1.textContent = "Etch";
-const p2 = document.createElement("p");
-p2.textContent = "-a-";
-const p3 = document.createElement("p");
-p3.textContent = "Sketch";
+const th1 = document.createElement("h2");
+th1.textContent = "ETCH";
+const th2 = document.createElement("h3");
+th2.textContent = "- A -";
+const th3 = document.createElement("h2");
+th3.textContent = "SKETCH";
 
-hcont.appendChild(p1);
-hcont.appendChild(p2);
-hcont.appendChild(p3);
+hcont.appendChild(th1);
+hcont.appendChild(th2);
+hcont.appendChild(th3);
 
 let input = prompt("Enter number of grid cells in a row");
 
