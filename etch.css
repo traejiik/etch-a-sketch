@@ -49,8 +49,10 @@ button:hover {
 .head > .hcontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: aquamarine;
     color: black;
     font-weight: bolder;
+    width: 620px;
+    align-items: center;
+    margin-bottom: 20px;
 }
