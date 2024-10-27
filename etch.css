@@ -13,7 +13,7 @@ body {
 }
 
 .grid {
-    border: 0.5px solid black;
+    border: 0.3px solid black;
     background-color: white;
 }
 
@@ -30,4 +30,9 @@ body {
     height: 600px;
     width: 600px;
     display: grid;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: black;
 }
