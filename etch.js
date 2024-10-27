@@ -49,6 +49,11 @@ const container = document.querySelector(".container");
 const grid = document.createElement("div");
 grid.classList.add("gridContainer");
 
+const head = document.querySelector(".head");
+const hcont = document.createElement("div");
+hcont.classList.add("hcontainer");
+
+head.appendChild(hcont);
 container.appendChild(grid);
 
 let input = prompt("Enter number of grid cells in a row");
