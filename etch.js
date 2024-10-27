@@ -60,6 +60,8 @@ buttonss.id = "buttonContainer";
 
 body.appendChild(buttonss);
 
+buttonss.style.cssText = "display: flex; justify-content: space-around; margin: 20px";
+
 const color = document.createElement("button");
 color.textContent = "Random Color Fill";
 const reset = document.createElement("button");
