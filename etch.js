@@ -77,3 +77,7 @@ buttns = document.querySelectorAll("button");
 buttns.forEach(btn => {
     btn.style.cssText = "border: 0.2px solid black; border-radius: 8px; height: 50px; width: 200px";
 });
+
+color.addEventListener("click", colourGrid);
+reset.addEventListener("click", resetGrid);
+clear.addEventListener("click", clearGrid);
