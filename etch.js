@@ -20,7 +20,13 @@ function resetGrid() {
     input = prompt("Enter number of grid cells in a row");
     document.querySelectorAll('.grid').forEach(e => e.remove())
     document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
-    createBoxes();
+    createBoxes(input);
+}
+
+function clearGrid() {
+    document.querySelectorAll('.grid').forEach(e => e.remove())
+    document.querySelectorAll('.hoverGrid').forEach(e => e.remove())
+    createBoxes(input);
 }
 
 const body = document.querySelector("body");
