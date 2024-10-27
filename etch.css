@@ -1,3 +1,7 @@
+body {
+    background-color: lightgray;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -22,4 +26,11 @@
 
 .hoverGrid {
     background-color: black;
+}
+
+.gridContainer {
+    border: 2px solid aquamarine;
+    height: 600px;
+    width: 600px;
+    display: grid;
 }
